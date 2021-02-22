@@ -1,0 +1,93 @@
+/* CORES
+https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=26A69A&secondary.color=B2DFDB */
+
+html{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5ffff;
+}
+
+*{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.container{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-flow: column;
+    align-self: center;
+    margin: auto;
+    border-style: solid;
+    border-color: #00766c;
+    border-radius: 10px;
+    padding: 15px;
+    padding-top: 30px;
+    background-color: #b2dfdb;
+    box-shadow: 5px 10px #26a69a;
+}
+
+.button{
+    outline-style: none;
+    width: 175px;
+    display: flex;
+    background-color: #e5ffff;
+    border-style: solid;
+    border-color: #26a69a;
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor:pointer;
+}
+
+.button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span::after{
+    content: '\00bb';
+    font-weight: bold;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span{
+    padding-right: 25px;
+}
+
+.button:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+
+.formsInput{
+    width: 300px;
+    outline-style: none;
+    border: 0;
+    border-bottom: 1px solid #00766c;
+    background-color: #e5ffff;
+    opacity: 0.7;
+}
+
